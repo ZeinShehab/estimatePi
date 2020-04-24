@@ -1,0 +1,83 @@
+#numberPoints {
+    font-family: 'Lato', sans-serif;
+    transition: 0.4s;
+    text-align: center;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #008CBA;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 20px;
+}
+
+#numberPoints:focus {
+    background: #008CBA;
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+}
+
+#numberPoints:focus::placeholder {
+    color: transparent;
+}
+
+#runBtn {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    color: #000000;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    background: white;
+    border: 2px solid #008CBA;
+    overflow: hidden;
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+    height: 34px;   
+}
+
+#runBtn:hover {
+    box-shadow: 0 10px 14px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #008CBA;
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+}
+
+#runBtn::after {
+    content: "";
+    background: white;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px;
+    margin-top: -120px;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+#runBtn:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+#pi {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    font-family:'Lato', sans-serif;
+    font-size:30px;
+    color:#008CBA;
+}
+
+#canvas {
+    position: absolute;
+}
